@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class test {
-   // private String username;
-   // private String passowrd;
-   // private String cellPhone;
-    //private String firstName;
-    //private String lastName;
+   String userName;
+   String passowrd;
+   String cellPhone;
+   String firstName;
+   String lastName;
 
 
     public static void main(String[] args){
@@ -13,16 +13,16 @@ public class test {
         //String Name;
         Scanner inputDevice = new Scanner(System.in);
             System.out.print("Enter your username: ");
-        Name = inputDevice.nextLine();
+        userName = inputDevice.nextLine();
     
-    if (checkUserName(Name)){
+    if (checkUserName(userName)){
         System.out.println("USERNAME SUCCESSFULLY CAPTURED.");
     } 
     else{
         System.out.println("USERNAME IS NOT CORRECTLY FORMATTED; PLEASE ENSURE THAT YOUR USERNAME CONTAINS AN UNDERSCORE AND IS NO MORE THAN FIVE CHARACTERS IN LENGTH.");
     }
 
-                String password;
+                //String password;
                 System.out.print("Enter your password: ");
              password = inputDevice.nextLine();
              if (checkUserPassword(password)){
@@ -32,7 +32,7 @@ public class test {
                 System.out.println("PASSOWORD IS NOT CORRECTLY FORMATTED; PLEASE ENSURE THAT THE PASSOWRD CONTAINS AT LEAST EIGHT CHARACTERS, A CAPITAL LETTER, A NUMBER, AND A SPECIAL CHARACTER.");
             }
     }
-    static boolean checkUserName(String Name){
+    static boolean checkUserName(String username){
             boolean hasUnderscore = Name.contains("_");
                 boolean shortEnough = Name.length() <= 5;
         return hasUnderscore && shortEnough;
