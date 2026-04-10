@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class test2 {
     public static void main(String[] args){
@@ -41,4 +41,4 @@ public class test2 {
       return shortEnough && hasCapital && hasNumber && hasSpecialCharacter;
     }
 
-}
+}/* */
